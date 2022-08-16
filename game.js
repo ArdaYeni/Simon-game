@@ -139,7 +139,16 @@ function nextSequence() {
   /*audio.play();*/
 
 }
+$("body").click(function(event){
+  if(!started){
+    nextSequence();
+    started=true;
+  }
 
+
+
+
+});
 $("body").keypress(function(event){
   if(!started){
     nextSequence();
